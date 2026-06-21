@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Sistema de Inventario</h1>
+
+    <!-- Caja de productos -->
+    <section class="card">
+
+        <h3>PRODUCTOS</h3>
+
+        <!-- Imagen del producto -->
+        <img id="imagenProducto"
+             class="imagen-producto"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99PKWxNDWKNb082pBMJgm84IGsm2pAhTsYcnc-vTyrg&s=10"
+             alt="Producto">
+
+        <section class="form-grid">
+
+            <!-- Nombre con lista -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" list="listaProductos" placeholder="Escribe producto...">
+
+            <datalist id="listaProductos"></datalist>
+
+            <section></section>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad">
+
+            <button id="btnAgregar" class="btn-form">
+                Agregar
+            </button>
+
+            <label for="precio">Precio unitario:</label>
+            <input type="number" id="precio">
+
+            <section></section>
+
+        </section>
+
+    </section>
+
+    <!-- Caja de inventario -->
+    <section class="card">
+
+        <h3>Inventario</h3>
+
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section class="total" id="totalGeneral">
+            Total general: $0
+        </section>
+
+    </section>
+
+    <footer class="andres">
+        Derechos reservados © 2026 Andres Campos
+    </footer>
+
+    <script src="andres.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parqueadero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Sistema de Parqueadero</h1>
+
+    <form id="parkingForm">
+
+        <label>Tipo de Vehículo</label>
+        <select id="tipoVehiculo" required>
+            <option value="">Seleccione</option>
+            <option value="Automovil">Automóvil</option>
+            <option value="Moto">Moto</option>
+        </select>
+
+        <label>Placa</label>
+        <input type="text" id="placa" placeholder="ABC123" required>
+
+        <label>Fecha y Hora de Ingreso</label>
+        <input type="datetime-local" id="ingreso" required>
+
+        <label>Fecha y Hora de Salida</label>
+        <input type="datetime-local" id="salida" required>
+
+        <label>Dinero Entregado</label>
+        <input type="number" id="pagoCliente" min="0" required>
+
+        <button type="submit">Calcular Pago</button>
+
+    </form>
+
+    <div id="resultado"></div>
+    <footer class="andres">derechos reservados @2026 Andres Campos</footer>
+</div>
+
+<script src="andres.js"></script>
+</body>
+</html>
